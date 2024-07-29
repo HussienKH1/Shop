@@ -1,0 +1,339 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.Navigation {
+    width: calc(100% - 40px); /* Reduce width to create space on the sides */
+    margin: 20px auto; /* Center the navigation bar with automatic left and right margins */
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #f1f0ed; /* Background color for the entire navigation bar */
+    padding: 10px; /* Add padding for better spacing */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better visual separation */
+    border-radius: 20px; /* Make the entire navigation bar background rounded */
+}
+
+.Navigation nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.Navigation ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.Navigation ul:first-of-type {
+    justify-content: flex-start;
+}
+
+.Navigation ul:last-of-type {
+    justify-content: flex-end;
+}
+
+.Navigation li {
+    margin: 0 10px;
+    /* background-color: #ffffff; background color for individual list items */
+    padding: 10px 15px; /* Add padding for better spacing */
+    border-radius: 15px; /* Make individual list items background rounded */
+}
+
+.Navigation a {
+    text-decoration: none;
+    color: #67645e;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.Navigation li span {
+    text-decoration: none;
+    color: #67645e;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.Login-Container {
+    margin-bottom: 25px;
+    background-color: #f1f0ed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    border-radius: 20px;
+}
+
+.Picture-Box {
+    display: flex; /* Add this line */
+}
+
+.Picture-Box img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 20px; /* Top-left corner */
+    border-bottom-left-radius: 20px;
+}
+
+.Login-Box {
+    width: 50%;
+    display: flex;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.Login-Box .Title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.BOX-CONTAINER {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #f1f0ed;
+    padding: 20px;
+}
+
+.BOX-INPUT input {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.SIGN-IN {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.SIGN-IN button {
+    font-size: 15px;
+    padding: 10px;
+    border: 2px solid #67645e; /* Single border color */
+    background-color: #f1f0ed;
+    color: #67645e;
+    border-radius: 15px;
+    cursor: pointer;
+    width: 100px;
+}
+
+.FORGET-PASSWORD,
+.SIGN-UP {
+    font-size: 18px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.FORGET-PASSWORD a,
+.SIGN-UP a {
+    display: inline-block;
+    margin-bottom: 0.2rem;
+    position: relative;
+    color: #67645e;
+    text-decoration: none;
+}
+
+.FORGET-PASSWORD a::before,
+.SIGN-UP a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0;
+    bottom: 0;
+    height: 2px;
+    background-color: black;
+    transition: width 0.5s ease-out;
+}
+
+.FORGET-PASSWORD a:hover::before,
+.SIGN-UP a:hover::before {
+    width: 100%;
+}
+
+.SIGN-UP span {
+    font-size: 18px;
+    color: #67645e;
+    margin-right: 5px;
+}
+
+.Title h1 {
+    font-size: 50px;
+    color: #67645e;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.Footer-Container {
+    background-color: #f8f8f8;
+    border-top: 1px solid #ddd;
+}
+
+
+.Upper-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #67645e;
+}
+
+.left-region,
+.right-region {
+    flex: 1;
+    padding: 20px;
+}
+
+.left-region {
+    max-width: 40%;
+}
+
+.left-region a {
+    position: relative;
+    display: inline-block;
+    color: #67645e;
+    text-decoration: none;
+    margin-bottom: 20px;
+    transition: all 0.5s ease;
+    width: fit-content;
+}
+
+
+.left-region a::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    left: 0;
+    bottom: 0;
+    height: 1px;
+    background-color: black;
+    transition: width 1s ease-out;
+} 
+
+.left-region a:hover:before{
+    width: 100%;
+}
+
+.left-region a:hover {
+    font-weight: bold;
+}
+
+.left-region span {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #67645e;
+}
+
+.left-region form {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.left-region input {
+    padding: 5px 10px;
+    width: 60%;
+    border: none;
+    border-right: 1px solid black;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.left-region button {
+    background-color: white;
+    border: none;
+    font-size: 15px;
+    padding: 5px 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: all 1s ease;
+}
+
+.left-region button:hover{
+    cursor: pointer;
+    background-color: #d4d1cb;
+}
+
+.right-region {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    border-left: 1px solid #67645e;
+}
+
+.right-region div {
+    flex: 1;
+    height: fit-content;
+    min-width: 150px;
+    padding: 0 10px;
+}
+
+.right-region span {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.section-1,
+.section-2,
+.section-3,
+.section-4{
+    display: flex;
+    flex-direction: column;
+}
+
+.section-2 div{
+    padding: 0;
+}
+
+.right-region a {
+    position: relative;
+    display: inline-block;
+    color: #67645e;
+    text-decoration: none;
+    margin-bottom: 20px;
+    transition: all 0.5s ease;
+    width: fit-content;
+}
+
+
+.right-region a::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    left: 0;
+    bottom: 0;
+    height: 1px;
+    background-color: black;
+    transition: width 1s ease-out;
+} 
+
+.right-region a:hover:before{
+    width: 100%;
+}
+
+.right-region a:hover {
+    font-weight: bold;
+}
+
+.support-contact {
+    color: #0073e6;
+    font-weight: bold;
+}
+
+.Down-region {
+    text-align: center;
+    color: #6c6c6c;
+    font-size: 14px;
+}
